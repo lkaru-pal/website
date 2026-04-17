@@ -1,0 +1,120 @@
+
+.infocontent {
+    word-spacing: normal;
+    font-family: 'Space Grotesk', sans-serif;
+    line-height: 1.6; 
+    color: #333;      
+}
+
+#p1 p {
+    font-weight: 700; 
+}
+
+.overview {
+    word-spacing: normal;
+    font-family: 'Space Grotesk', sans-serif;
+    line-height: 1.6; 
+    color: #000000;    
+    font-weight: 700;
+}
+
+.title1 {
+    font-family: 'Space Grotesk', sans-serif;
+    line-height: 1.6; 
+    color: #333;  
+    text-align: center;
+    padding: 1vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+   
+ 
+    border-bottom:2px solid #ffffff;
+}
+
+.comp {
+    padding: 0vw;
+    width: 26vw;
+    height: 26vw;
+    max-width: 100%;
+}
+
+.section {
+    display: flex;
+    align-items: flex-start;
+    gap: 2.083vw;
+    margin-top: 2.6vw;
+    max-width: 80vw;
+    margin-left: 9vw;
+    margin-right: auto;
+    text-align: left;
+      box-shadow: 0 0 2.4em rgba(153, 153, 153, 0.966);
+  padding: 3.5em 1em;
+  border-radius: 0.6em;
+  color: #1f003b;
+  cursor: pointer;
+
+
+
+}
+
+#image1 {
+    flex-shrink: 0;
+    align-items: right;
+    float: left;
+}
+
+.contenttitle {
+    flex-grow:1;
+    text-align: justify;
+    background-color: rgb(247, 245, 245);
+}
+
+.overview {
+    padding-left: 0vw;
+    padding-right: 0vw;
+    margin-top: 1.042vw;
+    margin-right: 1.042vw;
+    margin-left:1.042vw;
+    margin-bottom: 1.563vw;
+}
+
+
+
+
+
+.footercontent {
+    word-spacing: normal;
+    margin-top: 150px;
+    font-family: 'Space Grotesk', sans-serif;
+    line-height: 1.6; 
+    color: #ffffff;  
+    text-align: center;
+    background-color: #333;
+
+}
+
+.divider {
+    margin-top: 50px;
+    border-bottom:1px solid #000000;
+}
+
+@media screen and (max-width: 650px) {
+.section {
+    flex-direction: column;
+}
+
+.title1::before{
+text-align: center;
+padding-left: 1vw;
+padding-right: 1vw;
+flex-direction: row;
+}
+
+.infocontent {
+    word-spacing: normal;
+    flex-direction: column;
+    white-space: normal;      
+    word-break: normal;       
+    overflow-wrap: normal;
+}
+} 
