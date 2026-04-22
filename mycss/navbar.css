@@ -12,7 +12,9 @@
     display: flex;
     align-items: flex-start;
     justify-content: center;
-   
+    position: sticky;
+    top:0;
+    width:100%
 
 }
 
@@ -24,6 +26,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0.5rem 1rem;
+    z-index: 1000;
 
 }
 
@@ -42,6 +46,7 @@
 
 #menu {
     display: none;
+    
 
 }
 
@@ -91,6 +96,7 @@
 @media screen and (max-width: 650px) {
 .menu {
     flex-direction: column;
+    align-items: flex-start;
 }
 
 .menu .logo {
@@ -136,9 +142,10 @@
 #menu:checked ~ .logo label::before {
     content:"close"; 
     font-family: "Material Symbols Outlined";
-   
+
+
 
 }
 
-
+   
 }
