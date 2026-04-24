@@ -18,6 +18,8 @@
     font-weight: 700;
 }
 
+
+
 * {
     margin: 0;
     padding: 0;
@@ -56,9 +58,22 @@ body, html {
 }
 
 @media (max-width: 600px) {
+
+ 
     .apply-btn {
         padding: 12px 20px;
         font-size: 1rem;
     }
+
+
 }
 
+@media (max-width: 900px) {
+       .careerssection {
+    flex-direction: column-reverse;
+}
+
+.careerssection .image1 {
+    align-self: center;
+}
+}

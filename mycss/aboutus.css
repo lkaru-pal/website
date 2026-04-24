@@ -94,8 +94,8 @@
 }
 
 .divider {
-    margin-top: 50px;
-    border-bottom:1px solid #000000;
+    margin-top: 2.604vw;
+    border-bottom:0.052vw solid #000000;
 }
 
 @media screen and (max-width: 650px) {
