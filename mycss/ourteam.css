@@ -36,13 +36,21 @@ h1 {
   width: 8em;
   height: 8em;
   background-color: #000000;
-  padding: 0.5em;
+ 
   border-radius: 50%;
   margin: 0 auto 2em auto;
+  overflow: hidden;
+  display: flex;
+
 }
 .card img {
   width: 100%;
   border-radius: 50%;
+   max-width: inherit;
+  max-height: inherit;
+  height: inherit;
+  width: inherit;
+  object-fit: cover;
 }
 .card h3 {
   font-weight: 500;
