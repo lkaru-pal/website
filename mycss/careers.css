@@ -16,6 +16,7 @@
 }
 .careerssection .c1 {
     font-weight: 700;
+    font-size: 1vw;
 }
 
 
@@ -57,6 +58,71 @@ body, html {
     transform: scale(1.05);
 }
 
+ body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f4f4f4;
+    }
+    .job-card {
+        background: white;
+        padding: 20px;
+        margin: 50px auto;
+        width: 300px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+    button {
+        background: #505050;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        background: #505050;
+    }
+
+ /* Modal background */
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(3px);
+}
+
+/* Modal box */
+.modal-content {
+  background: #fff;
+  margin: 10% auto;
+  padding: 25px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 0 2em rgba(0,0,0,0.2);
+}
+
+/* Close button */
+.close {
+  float: right;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Form styling */
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}   
+
 @media (max-width: 600px) {
 
  
@@ -71,9 +137,7 @@ body, html {
 @media (max-width: 900px) {
        .careerssection {
     flex-direction: column-reverse;
+    align-items: center;
 }
 
-.careerssection .image1 {
-    align-self: center;
-}
 }

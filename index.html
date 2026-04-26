@@ -96,11 +96,11 @@
       <div class="column">
         <div class="card">
           <div class="img-container">
-            <img src="Images/me.jpg" alt="Image of June Doe"/>
+            <img src="Images/me.jpg" alt="Image of June Doe" />
           </div>
           <h3>Laasya Karupalli</h3>
           <p>CEO and founder</p>
-         
+
         </div>
       </div>
       <!-- Column 2-->
@@ -111,32 +111,32 @@
           </div>
           <h3> Eve Liggins </h3>
           <p>Co-founder</p>
-        
+
         </div>
       </div>
       <!-- Column 3-->
       <div class="column">
         <div class="card">
           <div class="img-container">
-            <img src="Images/manoncomp.jpg" alt="Image of Haajir Abrahams"/>
+            <img src="Images/manoncomp.jpg" alt="Image of Haajir Abrahams" />
           </div>
           <h3>Haajir Abrahams</h3>
           <p>Partner and business manager</p>
-          
+
         </div>
       </div>
     </div>
 
-<div class="row">
+    <div class="row">
       <!-- Column 1-->
       <div class="column">
         <div class="card">
           <div class="img-container">
-            <img src="Images/Stevedore Lightoller.jpg" alt="Image of Stevedore Lightoller"/>
+            <img src="Images/Stevedore Lightoller.jpg" alt="Image of Stevedore Lightoller" />
           </div>
-          <h3>Stevedore Lightoller</h3> 
+          <h3>Stevedore Lightoller</h3>
           <p>Lead Developer</p>
-         
+
         </div>
       </div>
       <!-- Column 2-->
@@ -147,18 +147,18 @@
           </div>
           <h3>Harry Buzgebe</h3>
           <p>Junior Developer</p>
-        
+
         </div>
       </div>
       <!-- Column 3-->
       <div class="column">
         <div class="card">
           <div class="img-container">
-            <img src="Images/kohana.jpg" alt="Image of Kohana Kataru"/>
+            <img src="Images/kohana.jpg" alt="Image of Kohana Kataru" />
           </div>
           <h3>Kohana Kataru</h3>
           <p>Trainee Developer</p>
-          
+
         </div>
       </div>
     </div>
@@ -167,11 +167,11 @@
       <div class="column">
         <div class="card">
           <div class="img-container">
-            <img src="Images/carly.jpg" alt="Image of Carly Smith"/>
+            <img src="Images/carly.jpg" alt="Image of Carly Smith" />
           </div>
           <h3> Carly Smith</h3>
           <p>Head of Cybersecurity</p>
-         
+
         </div>
       </div>
       <!-- Column 2-->
@@ -182,30 +182,31 @@
           </div>
           <h3>April Brooke</h3>
           <p>Senior Cybersecurity analyst</p>
-        
+
         </div>
       </div>
       <!-- Column 3-->
       <div class="column">
         <div class="card">
           <div class="img-container">
-            <img src="Images/meg.jpg" alt="Image of Megan Johnson Maree"/>
+            <img src="Images/meg.jpg" alt="Image of Megan Johnson Maree" />
           </div>
           <h3>Megan Johnson Maree</h3>
           <p>Junior Cybersecurity analyst</p>
-          
+
         </div>
       </div>
-    </div><div class="row">
+    </div>
+    <div class="row">
       <!-- Column 1-->
       <div class="column">
         <div class="card">
           <div class="img-container">
-            <img src="Images/liam.jpg" alt="Image of Liam Good"/>
+            <img src="Images/liam.jpg" alt="Image of Liam Good" />
           </div>
           <h3>Liam Good</h3>
           <p>Apprentice Business Analyst</p>
-         
+
         </div>
       </div>
       <!-- Column 2-->
@@ -216,29 +217,32 @@
           </div>
           <h3>Madhuhaas Gudipati</h3>
           <p> Apprentice Developer</p>
-        
+
         </div>
       </div>
       <!-- Column 3-->
       <div class="column">
         <div class="card">
           <div class="img-container">
-            <img src="Images/aine.jpg" alt="Image of Kate Mcgowan"/>
+            <img src="Images/aine.jpg" alt="Image of Kate Mcgowan" />
           </div>
           <h3>Kate Mcgowan</h3>
           <p>Apprentice Cybersecurity analyst</p>
-          
+
         </div>
       </div>
     </div>
-    <div class="row">
-   
 
     <div class="divider">
 
     </div>
+    <div class="row">
 
-    <div class="divider">
+
+
+    </div>
+
+
     <div class="row">
       <h1>Careers</h1>
     </div>
@@ -256,26 +260,67 @@
           </span>
 
           <br> We are looking for new talent to join our team!</br>
-          <p> If you are: </p>
+          <p> If you: </p>
 
-          <p> - Recently completed a software development course and looking for a company to work for
-          </p>
+          <p> - Recently completed a software development course and looking for a company to work for as an
+          apprentice</p>
+          <br> - Have a degree in Computing, or three years of experience in the field </br>
+          <br> - Are looking for a company that will help you grow your career and develop your skills</br>
 
-          <br> - Looking for a company that will help you grow your career and develop your skills</br>
+
 
           <br> Then Digital Minds is the company for you! Apply now to join our team and start your career
           in software development
           </br>
 
 
-
-
           <br> </br>
 
           <div class="button-container">
-            <a href="" class="apply-btn">Apply Now</a>
+            <a href="#" class="apply-btn" id="openModal">Apply Now</a>
           </div>
 
+          <div id="applicationModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+
+              <h2>Job Application</h2>
+
+              <form>
+                <label>Full Name</label>
+                <input type="text" required>
+
+                <label>Email</label>
+                <input type="email" required>
+
+                <label>Explain the role you are applying for and why you are interested:</label>
+                <textarea required></textarea>
+
+                <button type="submit">Submit Application</button>
+              </form>
+            </div>
+          </div>
+
+          <script>
+            const modal = document.getElementById("applicationModal");
+            const openBtn = document.getElementById("openModal");
+            const closeBtn = document.querySelector(".close");
+
+            openBtn.onclick = function (e) {
+              e.preventDefault();
+              modal.style.display = "block";
+            }
+
+            closeBtn.onclick = function () {
+              modal.style.display = "none";
+            }
+
+            window.onclick = function (e) {
+              if (e.target === modal) {
+                modal.style.display = "none";
+              }
+            }
+          </script>
         </div>
       </div>
 
