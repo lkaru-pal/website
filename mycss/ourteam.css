@@ -36,11 +36,14 @@ h1 {
   width: 8em;
   height: 8em;
   background-color: #000000;
+
+
  
   border-radius: 50%;
   margin: 0 auto 2em auto;
   overflow: hidden;
   display: flex;
+  border: 3px solid #000000;
 
 }
 .card img {
