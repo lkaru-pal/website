@@ -138,6 +138,7 @@ body, html {
        .careerssection {
     flex-direction: column-reverse;
     align-items: center;
+    width: fit-content;
 }
 
 }
