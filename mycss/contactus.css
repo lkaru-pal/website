@@ -7,16 +7,20 @@
  margin: auto;
  border: 3px solid #777777;
  box-shadow: 0 0 2em rgba(119, 119, 119, 0.966);
+ display: flex;
 
 }
 
+
+
 input[type=text], input[type=email], textarea {
  width: 100%;
- padding: 12px;
+ width:81vw;
+ padding: 0.625vw;
  border: 1px solid #ccc;
  border-radius: 4px;
- margin-top: 6px;
- margin-bottom: 16px;
+ margin-top: 0.313vw;
+ margin-bottom: 0.833vw;
  resize: vertical;
 }
 input[type=submit] {
@@ -26,7 +30,38 @@ input[type=submit] {
  border: none;
  border-radius: 4px;
  cursor: pointer;
+ 
 }
 input[type=submit]:hover {
  background-color: #363636;
 }
+
+.thank-you-message {
+ display: none;
+ text-align: center;
+ font-size: 2vw;
+ color: #333;
+ margin-top: 1vw;
+ margin-left: 10vw;
+}
+
+.contactForm {
+padding-left: auto;
+} 
+
+
+@media screen and (max-width: 650px) {
+.container {
+    flex-direction: column;
+}
+
+.contactForm{
+    word-spacing: normal;
+    flex-direction: column;
+    white-space: normal;      
+    word-break: normal;       
+    overflow-wrap: normal;
+
+}
+}
+
