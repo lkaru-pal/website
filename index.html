@@ -19,7 +19,7 @@
   <link rel="stylesheet" type="text/css" href="mycss/careers.css">
   <link rel="stylesheet" type="text/css" href="mycss/training.css">
   <link rel="stylesheet" type="text/css" href="mycss/contactus.css">
-
+  <link rel="stylesheet" type="text/css" href="mycss/scrolltotop.css">
 
 
 
@@ -36,32 +36,52 @@
         <span id="logo">DIGITAL MINDS</span>
         <label for="menu"></label>
       </div>
-      />
+      
 
-      <div class="items">
-        <a href="index.html" class="item">About us</a>
-        <a href="" class="item">Our Team</a>
-        <a href="" class="item">Careers</a>
-        <a href="" class="item">Training Opportunities</a>
-        <a href="" class="item">Contact Us</a>
+      <nav class="items">
+        <a href="#aboutus" class="item">About us</a>
+        <a href="#ourteam" class="item">Our Team</a>
+        <a href="#careers" class="item">Careers</a>
+        <a href="#training" class="item">Training Opportunities</a>
+        <a href="#contactus" class="item">Contact Us</a>
 
-
-
-
-
-      </div>
+      </nav>
     </div>
   </div>
   </div>
 
-  <div>
+<button onclick="topFunction()" id="scrolltop" title="Scrollto top">Top</button>
+
+
+<script>
+let mybutton = document.getElementById("scrolltop");
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+
+
+function topFunction() {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0; 
+}
+</script>
+
+<section id = "aboutus">
+  <div >
     <h1 class="title1">
       <strong>
         Digital Minds Web development
       </strong>
     </h1>
   </div>
-
+</section>
 
 
   <div class="section">
@@ -102,10 +122,11 @@
 
   </div>
   </div>
-  <section>
+  <section id = "ourteam">
     <div class="row">
       <h1>Our Team</h1>
     </div>
+    </section>
     <div class="row">
       <!-- Column 1-->
       <div class="column">
@@ -257,11 +278,11 @@
 
     </div>
 
-
+   <section id = "careers">
     <div class="row">
       <h1>Careers</h1>
     </div>
-
+   </section>
     <div class="careerssection">
 
 
@@ -352,9 +373,11 @@
     </div>
 
     <br> </br>
+    <section id = "training">
     <div class="row">
       <h1>Training opportunities</h1>
     </div>
+    </section>
 
     <br> </br>
 
@@ -413,12 +436,14 @@
 
     <br> </br>
 
-
+<section id = "contactus">
     <div class="row">
       <h1>Contact Us</h1>
     </div>
-
+</section>
     <br> </br>
+
+
 
     <div class="container">
       <form id="contactForm">
@@ -426,7 +451,7 @@
         <label for="fname">First Name</label>
         <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
         </div>
-
+    
 
 
         <div class="form-row">
