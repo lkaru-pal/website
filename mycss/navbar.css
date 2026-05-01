@@ -82,6 +82,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 2vw;
 
 }
 
@@ -97,6 +98,7 @@ html {
     font-size: 1.2vw;
     color: white;
     text-decoration: none;
+   
 }
 
 .item:hover{
